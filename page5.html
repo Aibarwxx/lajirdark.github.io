@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logoPlace">
+            <h1>The logo</h1>
+        </div>
+        <div class="navBar">
+            <nav>
+                <a class="fontNav" href="./index.html">Home</a>
+                <a class="fontNav" href="./page2.html">Videos</a>
+                <a class="fontNav" href="./page3.html">Homework</a>
+                <a class="fontNav" href="./page4.html">Faq</a>
+            </nav>
+        </div>
+        <!--2026.15.04 no css for now-->
+        <!--Registration table-->
+     <section>
+      <fieldset>
+        <legend>Join the Academia Classica</legend>
+        <p>Begin your journey toward scholarly excellence</p>
+
+        <li><label form="name">First name</label>
+         <input type="text" name="name" id="name"></li>
+        <li><label form="name">Last name</label>
+         <input type="text" name="name" id="name"></li>   
+        <li><label form="email">Email address</label>
+         <input type="email" name="email" id="email"></li>  
+        <!--Course select table--> 
+        <label for="course">Course of Interest</label>
+        <select name="course" id="course">
+            <option value="Select Course">Select Course</option>
+            <option value="Classical Literature">Classical Literature</option>
+            <option value="Philosophy">Philosophy</option>
+            <option value="History">History</option>
+            <option value="Rhetoric & Public Speaking">Rhetoric & Public Speaking</option>
+            <option value="Ancient Languages">Ancient Languages</option>
+        </select> 
+        <li><label form="password">Password</label>
+         <input type="password" name="password" id="password"></li>   
+        <li><label form="password">Confirm Password</label>
+         <input type="password" name="password" id="password"></li>
+
+        <!--The check box -->
+        <input type="checkbox" id="agree" name="agree" value="I agree">
+        <label for="agree">I agree to Terms of Service and Privacy Policy, and I acknowledge the academic honor code of Academia Classica.</label><br>
+        <!--button register-->
+        <button type="button">Register</button>
+     
+
+
+     </fieldset>
+     
+    </section>   
+
+    </header>
+</body>
+    <script src="./js/scripts.js" ></script>
+</html>
