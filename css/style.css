@@ -2,6 +2,7 @@ body{
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    background-color: #FAF8F3;
 }
 *{
     font-family: "Noto Sans", sans-serif;
@@ -104,4 +105,140 @@ footer{
     width: 100%;
     height: 200px;
     background-color: #2C1810;
+}
+
+
+/* VIDEOS */
+/* navigation */
+.header {
+    background-color: #2C1810;
+    font-size: 16px;
+    padding: 15px 0 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.header .container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.header .logo a {
+    text-decoration: none;
+    font-family: "Times New Roman", serif;
+}
+
+.header .logo-box {
+    background-color: #C9A876;
+    color: #4b1e0f;
+    font-weight: 300;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.header .logo-text {
+    color: #FAF8F3;
+    font-size: 18px;
+}
+
+.header .main-nav {
+    align-items: center;
+    
+}
+
+.header .main-nav a {
+    color: #FAF8F3;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Segoe UI Emoji";
+}
+
+.header .main-nav a:hover {
+    color: #c9a56a;
+}
+
+.header .nav-list {
+    display: flex;
+    gap: 30px;
+    list-style: none; 
+}
+
+.header .main-nav .btn-register {
+    background-color: #C9A876;
+    color: #4b1e0f;
+    padding: 10px 26px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.header .btn-register:hover {
+    background-color: #b8935a;
+}
+
+/* video */
+.content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.top-section {
+    text-align: center;
+    padding: 50px 0 50px 0;
+    
+}
+.top-section h2 {
+  color: #2C1810;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: "Segoe UI Emoji";
+}
+.top-section span {
+  color: #6B6256;
+  margin-bottom: 40px;
+}
+
+.search-container {
+  font-family: sans-serif;
+  max-width: 1000px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #888;
+}
+
+.filter-dropdown {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  min-width: 140px;
 }
