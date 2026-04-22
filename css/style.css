@@ -91,6 +91,16 @@ nav{
     width: 30%;
     height: 80%;
     background-color: chocolate;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+.personalInfoTitle{
+    color: #6B6256;
+    font-size: 15px;
+    margin: 0;
 }
 .listsOfHw{
     width: 65%;
