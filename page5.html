@@ -3,63 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Homework &amp; Assignments - Academia Classica</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="logoPlace">
-            <h1>The logo</h1>
+    <!-- Site Header -->
+    <header id="top">
+        <div class="container header-inner">
+            <div>
+                <h1>Academia Classica</h1>
+                <p class="header-tagline">Rooted in Antiquity. Built for Today.</p>
+            </div>
         </div>
-        <div class="navBar">
-            <nav>
-                <a class="fontNav" href="./index.html">Home</a>
-                <a class="fontNav" href="./page2.html">Videos</a>
-                <a class="fontNav" href="./page3.html">Homework</a>
-                <a class="fontNav" href="./page4.html">Faq</a>
-            </nav>
-        </div>
-        <!--2026.15.04 no css for now-->
-        <!--Registration table-->
-     <section>
-      <fieldset>
-        <legend>Join the Academia Classica</legend>
-        <p>Begin your journey toward scholarly excellence</p>
-
-        <li><label form="name">First name</label>
-         <input type="text" name="name" id="name"></li>
-        <li><label form="name">Last name</label>
-         <input type="text" name="name" id="name"></li>   
-        <li><label form="email">Email address</label>
-         <input type="email" name="email" id="email"></li>  
-        <!--Course select table--> 
-        <label for="course">Course of Interest</label>
-        <select name="course" id="course">
-            <option value="Select Course">Select Course</option>
-            <option value="Classical Literature">Classical Literature</option>
-            <option value="Philosophy">Philosophy</option>
-            <option value="History">History</option>
-            <option value="Rhetoric & Public Speaking">Rhetoric & Public Speaking</option>
-            <option value="Ancient Languages">Ancient Languages</option>
-        </select> 
-        <li><label form="password">Password</label>
-         <input type="password" name="password" id="password"></li>   
-        <li><label form="password">Confirm Password</label>
-         <input type="password" name="password" id="password"></li>
-
-        <!--The check box -->
-        <input type="checkbox" id="agree" name="agree" value="I agree">
-        <label for="agree">I agree to Terms of Service and Privacy Policy, and I acknowledge the academic honor code of Academia Classica.</label><br>
-        <!--button register-->
-        <button type="button">Register</button>
-     
-
-
-     </fieldset>
-     
-    </section>   
-
     </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page2.html">FAQ</a></li>
+            <li><a href="page3.html">Videos</a></li>
+            <li><a href="page4.html">Register</a></li>
+            <li><a href="page5.html" class="active">Homework</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="container">
+            <h2>Homework &amp; Assignments</h2>
+            <p class="text-center mb-2">Monitor your progress, review feedback, and track upcoming deadlines</p>
+
+            <!-- Summary Stats -->
+            <div class="grid mb-2">
+                <article class="card text-center">
+                    <h3>Pending</h3>
+                    <p class="stat-number stat-pending"><strong>2</strong></p>
+                </article>
+
+                <article class="card text-center">
+                    <h3>Submitted</h3>
+                    <p class="stat-number stat-submitted"><strong>1</strong></p>
+                </article>
+
+                <article class="card text-center">
+                    <h3>Current Average</h3>
+                    <p class="stat-number stat-graded"><strong>95%</strong></p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 class="text-left">Current Assignments</h2>
+
+            <article class="card assignment-card">
+                <div class="assignment-header">
+                    <h3>Essay: The Hero's Journey in Classical Literature</h3>
+                    <span class="badge badge-pending"><strong>Pending</strong></span>
+                </div>
+                <p><strong>Course:</strong> Classical Literature</p>
+                <p><strong>Due Date:</strong> April 15, 2026</p>
+                <p><strong>Points:</strong> 100</p>
+                <p class="assignment-description">
+                    Write a 1,500-word analytical essay examining the hero's journey as depicted in Homer's
+                    <em>Odyssey</em>. Your argument should engage with at least two secondary sources and
+                    compare Odysseus's arc with a modern interpretation of your choice.
+                </p>
+            </article>
+
+            <article class="card assignment-card">
+                <div class="assignment-header">
+                    <h3>Discussion Forum: Plato's Theory of Forms</h3>
+                    <span class="badge badge-submitted"><strong>Submitted</strong></span>
+                </div>
+                <p><strong>Course:</strong> Philosophy</p>
+                <p><strong>Due Date:</strong> April 10, 2026</p>
+                <p><strong>Points:</strong> 50</p>
+                <p class="assignment-description">
+                    Contribute a minimum of three substantive posts to the discussion forum on Plato's
+                    Theory of Forms. At least one post must respond critically to a classmate's argument,
+                    citing a passage from <em>The Republic</em> or <em>Phaedo</em>.
+                </p>
+            </article>
+
+            <article class="card assignment-card">
+                <div class="assignment-header">
+                    <h3>Primary Source Analysis: Late Roman Republic</h3>
+                    <span class="badge badge-pending"><strong>Pending</strong></span>
+                </div>
+                <p><strong>Course:</strong> Ancient History</p>
+                <p><strong>Due Date:</strong> April 20, 2026</p>
+                <p><strong>Points:</strong> 75</p>
+                <p class="assignment-description">
+                    Select two primary sources from the late Roman Republic (133–27 BCE) and write a
+                    comparative analysis of approximately 1,000 words. Consider authorial bias,
+                    historical context, and what each source reveals about the period's political tensions.
+                </p>
+            </article>
+
+            <article class="card assignment-card">
+                <div class="assignment-header">
+                    <div>
+                        <h3>Reading Reflection: Aristotle's Nicomachean Ethics</h3>
+                    </div>
+                    <div class="grade-section">
+                        <span class="badge badge-graded grade-badge"><strong>Graded</strong></span>
+                        <p><strong>Your Grade: 95 / 100</strong></p>
+                    </div>
+                </div>
+                <p><strong>Course:</strong> Philosophy</p>
+                <p><strong>Due Date:</strong> April 8, 2026</p>
+                <p><strong>Points:</strong> 50</p>
+                <p class="assignment-description">
+                    Submit a 2–3 page reflective response on Books I–III of Aristotle's
+                    <em>Nicomachean Ethics</em>. Focus on the concept of <em>eudaimonia</em> and explain,
+                    in your own words, how Aristotle distinguishes it from mere pleasure or wealth.
+                </p>
+            </article>
+        </section>
+
+        <section class="container">
+            <h2>Submission History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Assignment Title</th>
+                        <th>Course</th>
+                        <th>Submitted On</th>
+                        <th>Grade</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Reading Reflection: Aristotle's Nicomachean Ethics</td>
+                        <td>Philosophy</td>
+                        <td>April 7, 2026</td>
+                        <td>95 / 100</td>
+                        <td>Graded</td>
+                    </tr>
+                    <tr>
+                        <td>Discussion Forum: Plato's Theory of Forms</td>
+                        <td>Philosophy</td>
+                        <td>April 9, 2026</td>
+                        <td>Awaiting grade</td>
+                        <td>Submitted</td>
+                    </tr>
+                    <tr>
+                        <td>Essay: The Hero's Journey in Classical Literature</td>
+                        <td>Classical Literature</td>
+                        <td>Not yet submitted</td>
+                        <td>—</td>
+                        <td>Pending</td>
+                    </tr>
+                    <tr>
+                        <td>Primary Source Analysis: Late Roman Republic</td>
+                        <td>Ancient History</td>
+                        <td>Not yet submitted</td>
+                        <td>—</td>
+                        <td>Pending</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <aside class="footer-section">
+                    <h3>About Academia Classica</h3>
+                    <p>
+                        We are dedicated to preserving and transmitting the intellectual heritage of
+                        antiquity through rigorous, accessible online education.
+                    </p>
+                </aside>
+
+                <aside class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="page2.html">FAQ</a></li>
+                        <li><a href="page3.html">Videos</a></li>
+                        <li><a href="page4.html">Register</a></li>
+                        <li><a href="page5.html">Homework</a></li>
+                    </ul>
+                </aside>
+
+                <aside class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@academiaclassica.edu</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                    <p>Address: 123 Scholar Lane, Athens, GA 30601</p>
+                </aside>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Academia Classica. All rights reserved.</p>
+                <a href="#top" class="back-to-top">Back to Top</a>
+            </div>
+        </div>
+    </footer>
 </body>
-    <script src="./js/scripts.js" ></script>
 </html>

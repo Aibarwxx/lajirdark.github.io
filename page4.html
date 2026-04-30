@@ -3,11 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Register - Academia Classica</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <!-- Site Header -->
+    <header id="top">
+        <div class="container header-inner">
+            <div>
+                <h1>Academia Classica</h1>
+                <p class="header-tagline">Rooted in Antiquity. Built for Today.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page2.html">FAQ</a></li>
+            <li><a href="page3.html">Videos</a></li>
+            <li><a href="page4.html" class="active">Register</a></li>
+            <li><a href="page5.html">Homework</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="container">
+            <h2>Join Academia Classica</h2>
+            <p class="text-center mb-2">Complete the form below to create your student account and begin your studies.</p>
+
+            <form id="registrationForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="e.g. Eleanor" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="e.g. Hartford" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" name="age" min="16" max="120" placeholder="18" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" id="phone" name="phone" placeholder="555-123-4567" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="course">Primary Course of Interest</label>
+                    <select id="course" name="course" required>
+                        <option value="">-- Select a course --</option>
+                        <option value="literature">Classical Literature</option>
+                        <option value="philosophy">Philosophy</option>
+                        <option value="history">Ancient History</option>
+                        <option value="rhetoric">Rhetoric &amp; Public Speaking</option>
+                        <option value="languages">Ancient Languages (Greek &amp; Latin)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Student Status</label>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="studentStatus" value="fullTime" required>
+                            Full-time Student
+                        </label>
+                        <label>
+                            <input type="radio" name="studentStatus" value="partTime">
+                            Part-time Student
+                        </label>
+                        <label>
+                            <input type="radio" name="studentStatus" value="professional">
+                            Working Professional
+                        </label>
+                        <label>
+                            <input type="radio" name="studentStatus" value="other">
+                            Other
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Areas of Interest <span class="label-note">(select all that apply)</span></label>
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="interests" value="literature">
+                            Classical Literature
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interests" value="philosophy">
+                            Philosophy
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interests" value="history">
+                            Ancient History
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interests" value="languages">
+                            Ancient Languages (Greek &amp; Latin)
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interests" value="rhetoric">
+                            Rhetoric &amp; Public Speaking
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Personal Statement</label>
+                    <textarea id="message" name="message" rows="5"
+                              placeholder="Tell us about your academic background and what draws you to classical studies..." required></textarea>
+                </div>
+
+                <!-- Password Row -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    </div>
+                </div>
+
+                <!-- Terms Checkbox -->
+                <div class="form-group">
+                    <label class="checkbox-inline">
+                        <input type="checkbox" name="agreeTerms" required>
+                        I have read and agree to the <strong>Terms of Service</strong> and <strong>Privacy Policy</strong>
+                    </label>
+                </div>
+
+                <!-- Form Actions -->
+                <div class="form-actions">
+                    <button type="submit">Submit Registration</button>
+                    <button type="reset">Clear Form</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <aside class="footer-section">
+                    <h3>About Academia Classica</h3>
+                    <p>
+                        We are dedicated to preserving and transmitting the intellectual heritage of
+                        antiquity through rigorous, accessible online education.
+                    </p>
+                </aside>
+
+                <aside class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="page2.html">FAQ</a></li>
+                        <li><a href="page3.html">Videos</a></li>
+                        <li><a href="page4.html">Register</a></li>
+                        <li><a href="page5.html">Homework</a></li>
+                    </ul>
+                </aside>
+
+                <aside class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@academiaclassica.edu</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                    <p>Address: 123 Scholar Lane, Athens, GA 30601</p>
+                </aside>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Academia Classica. All rights reserved.</p>
+                <a href="#top" class="back-to-top">Back to Top</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
 </body>
-    <script src="./js/scripts.js" ></script>
 </html>
