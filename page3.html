@@ -3,57 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Course Videos - Academia Classica</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="logoPlace">
-            <h1>Your logo here</h1>
-        </div>
-        <div class="navBar">
-            <nav>
-                <a class="fontNav" href="./index.html">Home</a>
-                <a class="fontNav" href="./page2.html">Videos</a>
-                <a class="fontNav" href="">Homework</a>
-                <a class="fontNav" href="">Faq</a>
-                <button id="RegisterButton">Register</button>
-            </nav>
+    <!-- Site Header -->
+    <header id="top">
+        <div class="container header-inner">
+            <div>
+                <h1>Academia Classica</h1>
+                <p class="header-tagline">Rooted in Antiquity. Built for Today.</p>
+            </div>
         </div>
     </header>
-    <div class="mainPart">
-        <div class="mainPartHead">
-            <div class="mainPartLiner">
-                <h2>Homework & Assignments</h2>
-                <p>Track your academic progress and submit assignments</p>
 
-            </div>
-            <div class="yourInfo">
-                <div class="personalInfo">
-                    <p class="personalInfoTitle" >Pending Assignments</p>
-                    <p>2</p>
-                    
-                </div>
-                <div class="personalInfo">
-                    <p class="personalInfoTitle" >Submitted</p>
-                    <p>1</p>
-                </div>
-                <div class="personalInfo">
-                    <p class="personalInfoTitle" >Average Grade</p>
-                    <p>95%</p>
-                </div>
-            </div>
-        </div>
-        <div class="listsOfHw">
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page2.html">FAQ</a></li>
+            <li><a href="page3.html" class="active">Videos</a></li>
+            <li><a href="page4.html">Register</a></li>
+            <li><a href="page5.html">Homework</a></li>
+        </ul>
+    </nav>
 
-        </div>
-    </div>
+    <main>
+        <section class="container">
+            <h2>Lecture Video Library</h2>
+            <p class="text-center mb-2">
+                Stream our full catalogue of expert-led lectures — organised by subject and available
+                to all enrolled students at any time.
+            </p>
+        </section>
+
+        <section class="container">
+            <h2 class="text-left">Classical Literature</h2>
+            <div class="video-grid">
+                <article class="video-item">
+                    <div class="video-thumbnail">
+                        <svg width="64" height="64" fill="#8B7355" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                    </div>
+                    <div class="video-content">
+                        <h3>Introduction to Homer's Odyssey</h3>
+                        <p><strong>Duration:</strong> 45 min 23 sec</p>
+                        <p><strong>Instructor:</strong> Dr. Margaret Sterling</p>
+                        <p>An overview of the epic's structure, themes of homecoming, and Odysseus as a hero of cunning rather than strength.</p>
+                    </div>
+                </article>
+
+                <article class="video-item">
+                    <div class="video-thumbnail">
+                        <svg width="64" height="64" fill="#8B7355" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                    </div>
+                    <div class="video-content">
+                        <h3>Virgil's Aeneid: Duty, Fate, and Empire</h3>
+                        <p><strong>Duration:</strong> 38 min 15 sec</p>
+                        <p><strong>Instructor:</strong> Prof. James Crawford</p>
+                        <p>Explores how Virgil redefines the Homeric hero through the lens of Roman <em>pietas</em> and Augustan ideology.</p>
+                    </div>
+                </article>
+
+                <article class="video-item">
+                    <div class="video-thumbnail">
+                        <svg width="64" height="64" fill="#8B7355" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                    </div>
+                    <div class="video-content">
+                        <h3>Greek Tragedy: Reading Sophocles</h3>
+                        <p><strong>Duration:</strong> 52 min 40 sec</p>
+                        <p><strong>Instructor:</strong> Dr. Margaret Sterling</p>
+                        <p>A close reading of <em>Oedipus Rex</em> and <em>Antigone</em>, examining fate, free will, and civic duty.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 class="text-left">Philosophy</h2>
+            <div class="video-grid">
+                <article class="video-item">
+                    <div class="video-thumbnail">
+                        <svg width="64" height="64" fill="#8B7355" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                    </div>
+                    <div class="video-content">
+                        <h3>Plato's Republic: Justice and the Soul</h3>
+                        <p><strong>Duration:</strong> 41 min 30 sec</p>
+                        <p><strong>Instructor:</strong> Dr. Edmund Yale</p>
+                        <p>Unpacks Books I–IV, tracing Plato's argument that justice in the city mirrors justice in the individual soul.</p>
+                    </div>
+                </article>
+
+                <article class="video-item">
+                    <div class="video-thumbnail">
+                        <svg width="64" height="64" fill="#8B7355" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                    </div>
+                    <div class="video-content">
+                        <h3>Aristotle's Nicomachean Ethics</h3>
+                        <p><strong>Duration:</strong> 47 min 20 sec</p>
+                        <p><strong>Instructor:</strong> Dr. Edmund Yale</p>
+                        <p>Introduces <em>eudaimonia</em>, the doctrine of the mean, and why Aristotle believes virtue is a habit, not a gift.</p>
+                    </div>
+                </article>
+
+                <article class="video-item">
+                    <div class="video-thumbnail">
+                        <svg width="64" height="64" fill="#8B7355" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                    </div>
+                    <div class="video-content">
+                        <h3>Stoicism and Marcus Aurelius</h3>
+                        <p><strong>Duration:</strong> 35 min 45 sec</p>
+                        <p><strong>Instructor:</strong> Prof. Catherine Wells</p>
+                        <p>Draws on <em>Meditations</em> to examine Stoic ethics — the dichotomy of control, reason, and equanimity under pressure.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 class="text-left">Ancient History</h2>
+            <div class="video-grid">
+                <article class="video-item">
+                    <div class="video-thumbnail">
+                        <svg width="64" height="64" fill="#8B7355" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                    </div>
+                    <div class="video-content">
+                        <h3>The Rise of Ancient Rome</h3>
+                        <p><strong>Duration:</strong> 50 min 15 sec</p>
+                        <p><strong>Instructor:</strong> Dr. Robert Harrison</p>
+                        <p>Covers Rome's founding myths, the Regal period, and the transition to the Republic — drawing on Livy and archaeological evidence.</p>
+                    </div>
+                </article>
+
+                <article class="video-item">
+                    <div class="video-thumbnail">
+                        <svg width="64" height="64" fill="#8B7355" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                    </div>
+                    <div class="video-content">
+                        <h3>The Peloponnesian War</h3>
+                        <p><strong>Duration:</strong> 44 min 30 sec</p>
+                        <p><strong>Instructor:</strong> Dr. Robert Harrison</p>
+                        <p>Uses Thucydides as the primary lens to understand the conflict between Athens and Sparta as a study in power politics.</p>
+                    </div>
+                </article>
+
+                <article class="video-item">
+                    <div class="video-thumbnail">
+                        <svg width="64" height="64" fill="#8B7355" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                    </div>
+                    <div class="video-content">
+                        <h3>Byzantine Empire: Rome's Second Life</h3>
+                        <p><strong>Duration:</strong> 39 min 50 sec</p>
+                        <p><strong>Instructor:</strong> Prof. Diana Whitmore</p>
+                        <p>Examines how Constantinople preserved Roman law and Greek learning for a thousand years after the Western Empire's fall.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        
+        <div class="container">
+            <div class="footer-content">
+                <aside class="footer-section">
+                    <h3>About Academia Classica</h3>
+                    <p>
+                        We are dedicated to preserving and transmitting the intellectual heritage of
+                        antiquity through rigorous, accessible online education.
+                    </p>
+                </aside>
+
+                <aside class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="page2.html">FAQ</a></li>
+                        <li><a href="page3.html">Videos</a></li>
+                        <li><a href="page4.html">Register</a></li>
+                        <li><a href="page5.html">Homework</a></li>
+                    </ul>
+                </aside>
+
+                <aside class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@academiaclassica.edu</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                    <p>Address: 123 Scholar Lane, Athens, GA 30601</p>
+                </aside>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Academia Classica. All rights reserved.</p>
+                <a href="#top" class="back-to-top">Back to Top</a>
+            </div>
+        </div>
     </footer>
 </body>
-    <script src="./js/scripts.js" ></script>
 </html>

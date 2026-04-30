@@ -1,120 +1,192 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academia Classica</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Academia Classica - Online Classical Education</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="page-header">
+    <!-- Site Header -->
+    <header id="top">
         <div class="container header-inner">
-            <a class="brand" href="#">A</a>
-            <div class="brand-text">Academia Classica</div>
-            <nav class="main-nav">
-                <a href="#home">Home</a>
-                <a href="#courses">Videos</a>
-                <a href="#features">Homework</a>
-                <a href="#footer">FAQ</a>
-            </nav>
-            <a class="btn btn-primary" href="#register">Register</a>
+            <div>
+                <h1>Academia Classica</h1>
+                <p class="header-tagline">Rooted in Antiquity. Built for Today.</p>
+            </div>
         </div>
     </header>
 
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="page2.html">FAQ</a></li>
+            <li><a href="page3.html">Videos</a></li>
+            <li><a href="page4.html">Register</a></li>
+            <li><a href="page5.html">Homework</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
     <main>
-        <section class="hero" id="home">
-            <div class="container hero-content">
-                <h1>Welcome to Academia Classica</h1>
-                <p class="hero-subtitle">Discover the finest online courses in classical education. Join our distinguished community of learners and embark on a journey of intellectual excellence.</p>
-                <a class="btn btn-secondary" href="#courses">Begin Your Journey</a>
+        <section class="hero">
+            <h2>Where Ancient Wisdom Meets Modern Learning</h2>
+            <p>
+                Immerse yourself in the great texts, philosophies, and histories of the ancient world —
+                guided by expert scholars and delivered through a flexible online format built around your life.
+            </p>
+            <a href="page4.html" class="btn">Begin Your Journey</a>
+        </section>
+
+        <section class="container">
+            <h2>Our Distinguished Courses</h2>
+            <p class="text-center mb-2">A carefully curated curriculum that honours the breadth of classical learning</p>
+
+            <div class="grid">
+                <article class="card">
+                    <div class="icon">
+                        <svg width="24" height="24" fill="none" stroke="#2C1810" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                    </div>
+                    <h3>Classical Literature</h3>
+                    <p>
+                        From Homer's sweeping epics to the tragedies of Sophocles, explore the foundational
+                        texts of Western letters with close reading and scholarly commentary.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="icon">
+                        <svg width="24" height="24" fill="none" stroke="#2C1810" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
+                    </div>
+                    <h3>Philosophy</h3>
+                    <p>
+                        Engage with Plato, Aristotle, and the Stoics as you examine virtue, reason,
+                        justice, and the nature of the good life in structured seminar discussions.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="icon">
+                        <svg width="24" height="24" fill="none" stroke="#2C1810" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
+                        </svg>
+                    </div>
+                    <h3>Ancient History</h3>
+                    <p>
+                        Trace the rise and fall of great civilisations — from the city-states of Greece
+                        to the vast expanse of the Roman Empire — through primary sources and expert analysis.
+                    </p>
+                </article>
             </div>
         </section>
 
-        <section class="courses" id="courses">
-            <div class="container">
-                <div class="section-header">
-                    <p class="section-label">Our Distinguished Courses</p>
-                    <p class="section-copy">Immerse yourself in timeless knowledge with our carefully curated curriculum.</p>
-                </div>
-                <div class="cards">
-                    <article class="course-card">
-                        <div class="course-icon">📖</div>
-                        <h3>Classical Literature</h3>
-                        <p>Explore the great works of antiquity with expert guidance through timeless texts.</p>
-                    </article>
-                    <article class="course-card">
-                        <div class="course-icon">💡</div>
-                        <h3>Philosophy</h3>
-                        <p>Delve into the profound questions of existence with the wisdom of great thinkers.</p>
-                    </article>
-                    <article class="course-card">
-                        <div class="course-icon">🏛️</div>
-                        <h3>History</h3>
-                        <p>Journey through the ages and discover the events that shaped our world.</p>
-                    </article>
-                </div>
+        <!-- Why Choose Us -->
+        <section class="container">
+            <h2>Why Study with Academia Classica?</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>Expert-Led Instruction</h3>
+                    <p>
+                        Each course is led by a scholar with significant research experience and peer-reviewed
+                        publications. You learn from practitioners, not generalists.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Learn at Your Own Pace</h3>
+                    <p>
+                        Lifetime access to all lectures, readings, and resources means you can revisit
+                        material as many times as you need, on any device, anywhere in the world.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Globally Recognised Certificates</h3>
+                    <p>
+                        Complete a course and receive a certificate acknowledged by universities and
+                        professional bodies worldwide as a mark of genuine classical scholarship.
+                    </p>
+                </article>
             </div>
         </section>
 
-        <section class="features" id="features">
-            <div class="container features-grid">
-                <div class="feature-list">
-                    <h2>Why Choose Academia Classica</h2>
-                    <ul>
-                        <li>
-                            <span class="feature-dot"></span>
-                            <div>
-                                <strong>Distinguished Faculty</strong>
-                                <p>Learn from scholars with decades of academic excellence.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="feature-dot"></span>
-                            <div>
-                                <strong>Flexible Learning</strong>
-                                <p>Study at your own pace with lifetime access to materials.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="feature-dot"></span>
-                            <div>
-                                <strong>Prestigious Certification</strong>
-                                <p>Earn credentials recognized by institutions worldwide.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <aside class="testimonial">
-                    <p>“The pursuit of knowledge is the highest calling. Academia Classica has reignited my passion for learning and connected me with a community of like-minded scholars.”</p>
-                    <footer>— Eleanor Hartford, Class of 2025</footer>
-                </aside>
+        <!-- Student Testimonial -->
+        <section class="container">
+            <div class="card max-width-800">
+                <h3>Voices from Our Community</h3>
+                <p class="italic-text">
+                    <strong>"I enrolled in the Philosophy course during a sabbatical year, expecting a refresher.
+                    What I found was a rigorous, deeply engaging programme that transformed how I think about
+                    my own field. The instructor feedback alone was worth every penny."</strong>
+                </p>
+                <p class="author-text">— Dr. Marcus Aldridge, Lecturer in Classics, University of Edinburgh</p>
+            </div>
+        </section>
+
+        <!-- Stats Strip -->
+        <section class="container">
+            <h2>Academia Classica by the Numbers</h2>
+            <div class="grid">
+                <article class="card text-center">
+                    <p class="stat-number stat-graded"><strong>4,200+</strong></p>
+                    <h3>Enrolled Students</h3>
+                </article>
+                <article class="card text-center">
+                    <p class="stat-number stat-pending"><strong>18</strong></p>
+                    <h3>Expert Instructors</h3>
+                </article>
+                <article class="card text-center">
+                    <p class="stat-number stat-submitted"><strong>96%</strong></p>
+                    <h3>Satisfaction Rate</h3>
+                </article>
             </div>
         </section>
     </main>
 
-    <footer class="site-footer" id="footer">
-        <div class="container footer-grid">
-            <div>
-                <p class="footer-brand">Academia Classica</p>
-                <p>Excellence in education, tradition in learning.</p>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <aside class="footer-section">
+                    <h3>About Academia Classica</h3>
+                    <p>
+                        We are dedicated to preserving and transmitting the intellectual heritage of
+                        antiquity through rigorous, accessible online education.
+                    </p>
+                </aside>
+
+                <aside class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="page2.html">FAQ</a></li>
+                        <li><a href="page3.html">Videos</a></li>
+                        <li><a href="page4.html">Register</a></li>
+                        <li><a href="page5.html">Homework</a></li>
+                    </ul>
+                </aside>
+
+                <aside class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@academiaclassica.edu</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                    <p>Address: 123 Scholar Lane, Athens, GA 30601</p>
+                </aside>
             </div>
-            <div>
-                <p class="footer-title">Quick Links</p>
-                <a href="#home">Home</a>
-                <a href="#courses">Videos</a>
-                <a href="#features">Homework</a>
-                <a href="#footer">FAQ</a>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Academia Classica. All rights reserved.</p>
+                <a href="#top" class="back-to-top">Back to Top</a>
             </div>
-            <div>
-                <p class="footer-title">Contact</p>
-                <p>contact@academiaclassica.edu</p>
-                <p>+1 (555) 123-4567</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            © 2026 Academia Classica. All rights reserved.
         </div>
     </footer>
-
 </body>
 </html>
